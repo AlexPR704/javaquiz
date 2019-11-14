@@ -1,0 +1,93 @@
+body {
+    background-color: lightgoldenrodyellow;
+}
+
+.header {
+    margin: 0 auto;
+    width: 80%
+}
+.highScoreView {
+    display: inline-block;    
+}
+
+.timeText {
+    Float: right;
+}
+.timer {
+    float: right;
+    }
+
+.quizStart {
+    text-align: center;
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    clear: both;
+}
+
+.startButton {
+    background: blue;
+    color: white;
+}
+
+#modalDiv {
+    clear: both;  
+  }
+    
+  .modalContent {
+    background-color: #fefefe;
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    clear: both;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+  }
+
+  .answerBtn {
+      float: left;
+      background: red;
+      color: white;
+      margin: 10px 10px;
+      /* margin-bottom: 5px; */
+      display: block;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      
+      
+  }
+
+  #answerDisplay {
+      text-align: center;
+      font-size: 20px;
+      clear: both;
+      }
+
+#gameOverDiv {
+    display: none;
+    margin: 0 auto;
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    clear: both;
+}
+
+#scoreHere{
+    font-size:80px;
+}
+#initials {
+    font-size: 20px;
+}
+
+.disappear {
+    display: none;
+}
+
+#highScoreDiv {
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+    visibility: hidden;
+    text-align: center;
+    clear: both;
+}
+  

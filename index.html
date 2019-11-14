@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>JavaScript Quiz</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="header">
+                <button id="highScores">High Scores</button>
+                <h5 class="timeText">Time:</h5>
+                <h5 class="timer"></h5>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="quizStart">
+                <h2>Coding Quiz Challenge</h2>
+                <p> Do your best to answer the following code-related questions within the time limit. BUT there is a twist for every 
+                    wrong answers you will be penalize. Your score/time will be cut by fifteen seconds!</p>
+                <button class="startButton">Start Quiz</button>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div id="modalDiv" class="modal">
+                <div class="modalContent">
+                    <div class="modalHeader">
+
+                        <h2 id="questionh2">
+                            <!-- Displays question -->
+                        </h2>
+                    </div>
+                    <div id="popUpBody">
+                        <!-- Displays answer buttons -->
+                    </div>
+                    <div id="gameOverDiv">
+                        <p id=scoreHere></p>
+                        <div id="initialsInput">
+                            <form id="inputname" method="POST">
+                                <h5>Type initials and press submit to save:</h5> <input type="text"
+                                    placeholder="Enter Your Initials!" name="initials" id="initials">
+                                <button id="initialSubmitButton">Submit</button>
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <!-- displays if answers are right or wrong/probably with else/if statement -->
+                    <div id="answerDisplay">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div id="highScoreDiv">
+                        <button id="clearScores">Clear Scores</button>
+                        <button id="backToStart">Back to Start</button>
+                        <div id="savedHighScores">
+                            <ul id="displayScores"></ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="questions.js"></script>
+        <script src="code.js"></script>
+</body>
+
+</html>
